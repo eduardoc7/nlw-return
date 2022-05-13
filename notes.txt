@@ -1,0 +1,21 @@
+UTIL COMMANDS NLW RETURN:
+
+npm create vite@latest: comando para criar aplicações front end sem muito esforço (permite que o nosso navegador entenda o js mais atualizado, substituindo o webpack, babel etc)
+
+
+CONCEITOS:
+
+componente: 
+ - Uma função TSX que retorna um HTML
+ - necessita sempre ter letra maiúscula
+ 
+propriedades:
+ - no HTML, são os atributos
+ - ex: <ButtonComponent text="Subimit" />
+	function Button(props: ButtonProps )
+	props.text 
+	
+
+tailwindcss: um utilitário com várias classes de estilo (substituindo a maneira como trabalhamos com css tradicionalmente)
+
+comando: npx tailwindcss init -p (integra com o vite)
