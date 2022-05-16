@@ -1,7 +1,19 @@
 UTIL COMMANDS NLW RETURN:
 
+FRONT END:
 npm create vite@latest: comando para criar aplicações front end sem muito esforço (permite que o nosso navegador entenda o js mais atualizado, substituindo o webpack, babel etc)
 
+BACK END:
+npm i typescript @types/node ts-node-dev -D
+npx tsc --init
+npx tsc: compila o ts para js
+npm i express @types/express
+npm i -D prisma: prisma para dev usando sqlite
+npm i @prisma/client: rodar em produção
+npx prisma --init
+npx prisma studio: database viewer integrado
+
+mailtrap: serviço para teste de emails
 
 CONCEITOS:
 
@@ -14,8 +26,22 @@ propriedades:
  - ex: <ButtonComponent text="Subimit" />
 	function Button(props: ButtonProps )
 	props.text 
-	
+
+SOLID:
+1. Single Responsibility Principle
+2. Open/Closed Principle
+3. Liskov Substitution Principle
+4. Interface Segregation Principle
+5. Dependency Inversion Principle
+
+1. Cada entidade tem uma única responsabilidade
+2. As entidades da aplicação devem ser abertas para extensão mas fechadas para modificação
+3. Poder substituir uma classe pai por uma herença e tudo funcionar
+4. Separar as interfaces
+5. criar o fluxo da aplicação sempre de fora para dentro e nunca de dentro para fora
 
 tailwindcss: um utilitário com várias classes de estilo (substituindo a maneira como trabalhamos com css tradicionalmente)
 
 comando: npx tailwindcss init -p (integra com o vite)
+
+
